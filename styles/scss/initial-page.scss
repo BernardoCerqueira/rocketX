@@ -1,0 +1,68 @@
+@use "./common.scss";
+
+// GENERAL
+.short-title{
+    width: 550px;
+}
+
+.long-title{
+    width: 650px;
+}
+
+.second-page-foreground, .third-page-foreground, .fourth-page-foreground{
+    padding-top: 12rem;   
+}
+
+// HERO SECTION
+#heroSection{
+    background: url(../../img/home/01.jpg);
+    @include common.sectionMixin(center, cover, 100%, 100vh, cover, white);
+}
+
+.foreground{
+    margin: auto;
+    text-align: left;
+    width: 1300px;
+    padding: 10rem 1rem;
+}
+
+.arrow-down{
+    width: 100px;
+    display: block;
+    margin: 2rem auto;
+}
+
+// SECOND SECTION
+#secondSection{
+    background: url(../../img/home/03.jpg);
+    @include common.sectionMixin(center, cover, 100%, 100vh, cover, white);
+}
+
+// THIRD SECTION
+#thirdSection{
+    background: url(../../img/home/02.gif);
+    @include common.sectionMixin(center, cover, 100%, 100vh, cover, white);
+}
+
+// FOURTH SECTION
+#fourthSection{
+    background: url(../../img/home/04.jpg);
+    @include common.sectionMixin(center, cover, 100%, 100vh, cover, white);
+}
+
+// MEDIA QUERIES
+@media screen and (max-width: 768px){
+    .foreground{
+        padding: 5rem 1rem;
+        width: 100%;
+    }
+    .short-title, .long-title{
+        width: 100%;
+    }
+    .fourth-page-foreground, .second-page-foreground{
+        padding-top: 8rem;
+    }
+    .third-page-foreground{
+        padding-top: 10rem;
+    }
+}

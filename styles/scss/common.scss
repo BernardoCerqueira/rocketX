@@ -1,0 +1,106 @@
+@mixin sectionMixin($bg-position, $bg-size, $width, $height, $object-fit, $color){
+    background-position: $bg-position;
+    background-size: $bg-size;
+    width: $width;
+    height: $height;
+    object-fit: $object-fit;
+    color: $color;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+// BOTÃO
+.main-btn{
+    padding: 1rem 3rem;
+    border: 1px solid white;
+    margin-top: 3rem;   
+}
+
+
+// NAVBAR
+.navbar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0.5rem;
+
+    .nav-item{
+        .nav-link{
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    }
+}
+
+#navbarIcon{
+    width: 70px;
+    margin-right: 5rem;
+}
+
+// TEXTO DAS TABELAS
+.dark-span{
+    color: #b9b9b9;
+}
+
+// MAIS INFORMAÇÕES
+.falcon-second-page-foreground-3, .hsf-more-info{
+    width: 100%;
+    height: 85vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+
+    .container{
+        p{
+            font-size: 16px;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color:grey;
+
+        &:hover{
+            color: #b9b9b9;
+        }
+    }
+}
+
+// FOOTER
+.footer{
+    background-color: black;
+    color: white;
+    height: 15vh;
+    display: flex;
+    place-content: center;
+    place-items: center;
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+
+        &:hover{
+            color:#b9b9b9;
+        }
+
+        &:first-child{
+            color: grey;
+        }
+    }
+}

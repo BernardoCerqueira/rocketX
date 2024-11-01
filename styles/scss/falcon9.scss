@@ -1,0 +1,242 @@
+@use "./common.scss";
+
+// HERO SECTION
+#falconHeroSection{
+    background: url(../../img/falcon9/01.jpg);
+    @include common.sectionMixin(center, cover, 100%, 100vh, cover, white);
+}
+
+.falcon-foreground{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+
+    h1{
+        font-size: 90px;
+        font-family: 'Rubik';
+    }
+}
+
+// SECOND SECTION
+#falconSecondSection{
+    padding: 0;
+    overflow: hidden;
+}
+
+.number{
+    background-color: black;
+    color: white;
+    padding: 7rem 0;
+    
+    h1{
+        font-size: 90px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+}
+
+// PART 1
+.falcon-second-page-foreground{
+    background: url(../../img/falcon9/02.jpg);
+    @include common.sectionMixin(center, cover, 100%, 100vh, cover, white);
+    padding: 0;
+
+    .container{
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+
+        p{
+            width: 650px;
+            font-size: 22px;
+            line-height: 3rem;
+        }
+    }
+}
+
+// PART 2
+#falconFirstCarousel{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: white;
+
+    .carousel-inner{
+        height: 100vh;
+
+        .carousel-item{
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+
+                .container{
+                    padding-top: 15%;
+                    margin-left: 13%;
+                    width: 500px;
+                }
+        }
+    }
+}
+
+#carousel1Slide1{
+    background: url("../../img/falcon9/03.jpg");
+}
+#carousel1Slide2{
+    background: url("../../img/falcon9/04.jpg");
+}
+#carousel1Slide3{
+    background: url("../../img/falcon9/05.jpg");
+}
+#carousel1Slide4{
+    background: url("../../img/falcon9/06.jpg");
+}
+#carousel1Slide5{
+    background: url("../../img/falcon9/07.jpg");
+}
+
+.table{
+    color: white;
+}
+
+// PART 3
+.falcon-second-page-foreground-2{
+    background: url(../../img/falcon9/08.jpg);
+    @include common.sectionMixin(center, cover, 100%, 100vh, cover, white);
+
+    .container{
+        width: 500px;
+        margin-left: 13%;
+        padding-top: 15%;
+
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+// PART 4
+#carousel2Slide1{
+    background: url("../../img/falcon9/09.jpg");
+}
+#carousel2Slide2{
+    background: url("../../img/falcon9/10.jpg");
+}
+#carousel2Slide3{
+    background: url("../../img/falcon9/11.jpg");
+}
+#carousel2Slide4{
+    background: url("../../img/falcon9/12.jpg");
+}
+#carousel2Slide5{
+    background: url("../../img/falcon9/13.jpg");
+}
+#carousel2Slide6{
+    background: url("../../img/falcon9/14.jpg");
+}
+
+#carouselExampleCaptions{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: white;
+
+    .carousel-inner{
+        height: 100vh;
+
+        .carousel-item{
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+    }
+}
+
+.carousel-text{
+    background-color: black;
+    width: fit-content;
+    padding: .2rem 1.2rem;
+    margin: auto;
+}
+
+// MEDIA QUERIES
+@media screen and (max-width: 768px){
+    .falcon-second-page-foreground{
+        .container{
+            p{
+                font-size: 18px;
+                width: 80vw;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .falcon-foreground{
+            min-height: 40vh;
+        h1{
+            font-size: 17vw;
+        }
+        h5{
+            font-size: 4vw;
+            line-height: 8vw;
+        }
+    }
+    #falconFirstCarousel{
+        .carousel-inner{
+            .carousel-item{ 
+                    .container{
+                        margin-top: 8rem;
+                        margin-left: .5rem;
+                        width: 90vw;
+                    }
+            }
+        }
+    }
+    .falcon-second-page-foreground-2{    
+        .container{
+            width: 80vw;
+            margin-left: 0;
+            padding-top: 8rem;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 556px){
+    .number{
+        padding: 1rem 0;
+        padding-bottom: 1rem;
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px){
+    .falcon-second-page-foreground{
+        .container{
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    .falcon-second-page-foreground-3{
+        .btn{
+            width: 80vw;
+            padding: .8rem .3rem;
+            margin: .8rem auto;
+        }
+    }
+}
