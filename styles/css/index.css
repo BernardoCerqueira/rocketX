@@ -446,6 +446,14 @@ body {
   font-weight: 600;
 }
 
+#contactContainerEmailLink {
+  text-decoration: none;
+}
+
+#contactContainerEmail:hover {
+  color: #d8d8d8;
+}
+
 .earth-container {
   background: url(../../img/humanFlight/02.jpg);
   background-position: center;
